@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Header</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section {
+    background-image: url('/images/Professional+painter+painting+an+interior+wall-1920w.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-div {
+    margin-top: 10px;
+    font-size: 24px;
+    margin-right: 20px; 
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li:first-child {
+    margin-left: 0;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar ul li ul {
+    padding-top: 10px;
+    margin-bottom:  10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    height: 300px;  
+    border-radius: 5px;  
+}
+
+.navbar ul li ul li {
+    padding: 7px;
+    margin-right: 5px;
+    transition: background-color ease;
+}
+
+.navbar ul li ul li:hover {
+    background-color: #c2bdbd;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navbar li:hover ul {
+    display: block; 
+}
+
+.navbar ul li ul li {
+    display: block;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+}
+
+.phone-icon {
+    font-size: 10px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.phone-number {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Hamburger menu icon */
+.hamburger-menu {
+    display: none; /* Hide by default */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-left: 20px; /* Adjusted margin for smaller screens */
+    }
+
+    .navbar {
+        margin-top: 10px; /* Adjusted margin for smaller screens */
+        margin-right: 20px; /* Adjusted margin for smaller screens */
+        margin-left: 20px; /* Adjusted margin for smaller screens */
+        flex-grow: 1; /* Navbar takes remaining space */
+    }
+
+    .contact-info {
+        margin-right: 20px; /* Adjusted margin for smaller screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu icon */
+        margin-right: 20px; /* Adjusted margin for smaller screens */
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: none; /* Hide navbar links */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar ul li {
+        margin-left: 0; /* Reset margin */
+        margin-bottom: 10px; /* Add spacing between links */
+    }
+
+    .navbar ul li a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+    }
+
+    .navbar.active ul {
+        display: flex; /* Show navbar links when active */
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-navbar">
+        <div class="logo-div">
+            <!-- Your logo here -->
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">&#9776;</div>
+    </div>
+    <div class="contact-info">
+        <div class="phone-icon">Phone</div>
+        <div class="phone-number">123-456-7890</div>
+    </div>
+</header>
+
+<script>
+// Toggle navbar links on hamburger menu icon click
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

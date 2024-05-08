@@ -1,0 +1,188 @@
+@media only screen and (max-width: 768px) {
+
+
+.logo {
+  margin-left: 20px; 
+}
+.navbar {
+  margin-top: 10px; 
+  margin-right: 20px;  
+  /* margin-left: 20px;  */
+  flex-grow: 1; 
+}
+
+.contact-info {
+  margin-right: 20px; 
+}
+
+.hamburger-menu {
+  display: block; 
+  margin-right: 20px; 
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: none; 
+  flex-direction: column; 
+  position: absolute;
+  top: 10%;
+  left: 50;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navbar ul li ul {
+  display: none;
+}
+
+ .navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  /* display: block; */
+}
+
+.navbar.active ul {
+  display: flex; 
+}
+.book-btn,.book-btn2{
+  left: 130px;
+}
+
+.hearo-div{
+  padding-top: 50px;
+  text-align: center;
+}
+.consultation-div{
+  text-align: center;
+  display: table-cell;
+  height: 250px;
+  background-color: #f1eded;
+ 
+ }
+.consultation-section{
+  margin-top: 200px;
+  text-align: center;
+  margin-left: 50px;
+}
+.consultation-heading{
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 150px;
+  font-size: 30px;
+ }
+ .consultation-heading-div p{
+   padding-right: 80px;
+   
+ }
+ .consultation-heading-div{
+  margin-left: 60px;
+  text-align: center;
+
+ }
+ .form-container {
+
+ }
+ .form-input {
+  background-color:  #f1eded;
+  border: none;
+  border-bottom: 2px solid #ccc; 
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 150px;
+  outline: none; 
+ }
+ .submit-btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+ }
+ 
+ 
+.about-section{
+  padding-top: 270px;
+  display: table-cell;
+}
+.about-div1{
+ padding-top: 20px;
+ margin-left: 60px;
+ text-align: center;
+}
+
+.service-section{
+  display: table-cell;
+  padding-left: 70px;
+  margin-bottom: 80px;
+}
+.service-div{
+ text-align: center;
+ margin-bottom: 40px;
+
+}
+.service-div1,
+.service-div2,
+.service-div3,
+.service-div4,
+.service-div5,
+.service-div6,
+.service-div7,
+.service-div8{
+  margin-bottom: 40px;
+}
+.service-section2,.service-section3{
+  display: table;
+  margin-right: 80px;
+  margin-left: 70px;
+}
+.projcts-section{
+  background-color:#f4d9d9;
+  height: auto;
+  }
+.projcts-part{
+  display: table-cell;
+  text-align: center;
+}
+.projects-para{
+  /* margin-left: 150px; */
+  padding-left: 90px;
+  text-align:center;
+  margin-right: 60px;
+}
+.projects-btn-div1{
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 20px;
+  padding-bottom: 70px;
+}
+#content1{
+  text-align: center;
+  padding-left: 10px;
+  display: table-cell;
+ }
+ .link{
+  margin-left: 50px;
+  text-align: center;
+ }
+ .projects-image{
+  margin-left: 100px;
+  width: 100%;
+ }
+ #content2{
+  left: 10px;
+  text-align: center;
+  padding-left: 10px;
+ }
+ .projects-btn-div{
+  margin-left: 10px;
+ }
+ 
+ .hearo-div,
+ .about-section,
+ .consultation-div,
+ .form-container,
+ .call-us-section,
+ .service-section,
+ .projcts-part {
+     margin: 20px;
+
+ } 
+}

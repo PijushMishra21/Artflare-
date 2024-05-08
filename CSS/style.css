@@ -1,0 +1,538 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header {
+ margin-top: 10px;
+ padding: 10px 0;
+}
+body {
+ 
+}
+.section{
+ background-image: url('/images/Professional+painter+painting+an+interior+wall-1920w.webp');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 650px;
+}
+.container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo-navbar {
+ display: flex;
+ align-items: center;
+}
+
+.logo-div {
+ margin-top: 10px;
+ font-size: 24px;
+ margin-right: 20px; 
+}
+.logo{
+ margin-left: 150px;
+}
+.navbar ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ text-transform: uppercase;
+ margin-left: 40px;
+
+}
+.hamburger-menu {
+ display: none; 
+}
+.navbar ul li {
+ margin-left: 20px;
+
+}
+
+.navbar ul li:first-child {
+ margin-left: 0;
+}
+
+.navbar ul li a {
+ color: #333;
+ text-decoration: none;
+
+}
+ 
+.navbar ul li ul {
+ padding-top: 10px;
+ margin-bottom:  10px;
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ height: 370px;  
+ border-radius: 5px;  
+}
+.navbar ul li ul li{
+ padding: 10px;
+ margin-right: 5px;
+ transition: background-color ease;
+ margin-left: 0;
+}
+.navbar ul li ul li:hover{
+ background-color: #c2bdbd;
+ color: #fff;
+ border-radius: 5px;
+}
+.navbar li:hover ul {
+ display: block; 
+}
+.navbar ul li ul li {
+ display: block;
+}
+
+
+
+.contact-info {
+ display: flex;
+ align-items: center;
+ margin-right: 150px;
+}
+
+.phone-icon {
+ font-size: 10px;
+ margin-right: 5px;
+ border: 1px solid #fff;
+ padding: 5px;
+ border-radius: 100%;
+ color: #fff;
+}
+
+.phone-number {
+ font-size: 16px;
+ color: #fff;
+ 
+}
+
+
+
+/* main section */
+
+.hearo-div{
+ margin-top: 100px;
+ margin-left: 150px;
+}
+.heading1 , .heading2{
+  font-size: 52px;
+  font-weight:normal;
+  
+}
+.heading2{
+ color: #3d3d3d;
+}
+.span{
+ color: #477bf7
+}
+.bold{
+ font-weight: 800;
+}
+.hr-line{
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.para{
+ font-size: 20px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color: #333;
+ margin-bottom: 30px;
+}
+.book-btn{
+ width: 250px;
+ height: 50px;
+ position: absolute;
+ border: none;
+ background: linear-gradient(to right,#f92aa6, #0761bb);
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.book-btn:hover{
+ background: linear-gradient(to right,#f90c9a, #03509d);
+
+}
+
+
+
+
+.about-section{
+ margin-top: 150px;
+ margin-left: 150px;
+ margin-right: 150px;
+ display: flex;
+ background-image: url('/images/a5e31ff0-a919-4cbf-ad8d-8f60fddc2ccb.png');
+ background-size:contain;
+ 
+ background-repeat:no-repeat;
+ background-position:left;
+}
+/* .about-div1{
+ margin-top: 150px;
+ margin-left: 150px;
+ margin-right: 150px;
+} */
+.about-div{
+ padding-left: 50px;
+ margin-right: 50px;
+ width: 350px;
+}
+.image-div{
+ margin-bottom: 50px;
+ width: 350px;
+}
+.about-image{
+ width: 100%;
+}
+.about-para{
+ margin-bottom: 50px;
+ width: 350px;
+}
+.about-h1{
+ padding-bottom: 20px;
+}
+.about-p{
+ padding-top: 20px;
+}
+.consultation-div{
+ text-align: center;
+ margin-top: 200px;
+ margin-left: 150px;
+ margin-right: 150px;
+ border-radius: 5px;
+ height: 180px;
+ background-color: #f1eded;
+ display: flex;
+
+}
+.consultation-heading-div{
+ padding-top: 30px;
+ margin-left: 50px;
+ text-align: left;
+
+}
+.heading3{
+ font-size: 52px;
+ color: #f1e3e3;
+}
+.consultation-sub-heading{
+ color: #f92aa6;
+ font-size: 18px;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.consultation-section{
+ margin-bottom: 20px;
+}
+.consultation-heading{
+ margin-top: 10px;
+ width: 150px;
+ font-size: 33px;
+}
+
+
+.form-container {
+ border-left: 2px solid #ccc; 
+ margin-top: 50px;
+ margin-left: 100px;
+ padding-left: 50px;
+ display: flex;
+ flex-direction: column;
+ margin-right: 50px;
+}
+.form-1 div{
+}
+.form-input {
+ background-color:  #f1eded;
+ border: none;
+ border-bottom: 2px solid #ccc; 
+ margin-bottom: 20px;
+ padding: 5px;
+ width: 250px;
+ outline: none; 
+}
+
+.checkbox-div{
+ text-align: left;
+ display: flex;
+}
+.terms-para{
+ margin-left: 10px;
+}
+.terms-para a {
+ text-decoration: none;
+ color: #0761bb;
+ font-weight: 500;
+ font-size: 15px;
+}
+.submit-btn {
+ background-color: #a9c204;
+ color: white;
+ border: none;
+ width: 125px;
+ height: 70px;
+ border-radius: 5px;
+ margin-top: 50px;
+ /* padding: 10px 20px; */
+ cursor: pointer;
+}
+
+.submit-btn:hover {
+ background-color: #45a049;
+}
+
+.call-us-section{
+ background-image: url('/images/home-improvement-girl-painting-500x500.webp');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 550px;
+ overflow: hidden;
+
+}
+
+.book-btn2{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    border: none;
+    background: linear-gradient(to right,#e8b017, #46a70a);
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+   }
+   .book-btn2:hover{
+    background: linear-gradient(to right,#bc8c08, #1f4b03);
+
+   }
+
+.service-section{
+ margin-top: 50px;
+ margin-left: 150px;
+ margin-right: 150px;
+ display: flex;
+}
+
+
+.service-section2{
+ margin-top: 50px;
+ margin-left: 150px;
+ margin-right: 150px;
+ display: flex;
+}
+.service-section3{
+ margin-top: 50px;
+ margin-left: 150px;
+ margin-right: 150px;
+ display: flex;
+}
+.service-div{
+ width: 360px;
+margin-right: 15px;
+height: 360px;
+}
+.servises-h4{
+ padding-left: 20px;
+ font-size: 25px;
+ color: #f1e3e3;
+font-weight: 400;
+padding-top: 10px;
+}
+.servises-para1{
+ padding-top: 10px;
+ padding-left: 20px;
+ font-size: px;
+ padding-right: 50px;
+ color: #f1e3e3;
+ font-weight: 200;
+}
+.service-div1{
+ width: 360px;
+margin-right: 15px;
+background-image: linear-gradient(to right,#c98b05, #f834bd, #0761bb);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+
+}
+.service-div2{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/1681378715189588de527c069-HLKT00000841_batch-3-800x600_8-main.webp');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+
+}
+
+.service-div3{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/service-image1-copyright-890x664.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+
+}
+
+.service-div4{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/service-image2-copyright-890x664.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+}
+
+.service-div5{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/service-image3-copyright-890x664.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+
+}
+
+.service-div6{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/product-image3-copyright-630x630 (1).jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+}
+
+.service-div7{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/product-image3-copyright-630x630.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+}
+.service-div8{
+ width: 360px;
+margin-right: 15px;
+background-image: url('/images/product-image4-copyright-630x630.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 360px;
+}
+
+
+.service-eimg{
+ width: 100%;
+height: 360px; 
+}
+/* .servises-para:first-child{
+ position: absolute;
+ text-decoration: none;
+ font-size: 25px;
+ color: #ccc;
+ padding-left: 10px;
+ padding-top: 320px;
+} */
+.servises-para-links{
+ position: absolute;
+ text-decoration: none;
+ font-size: 25px;
+ color: #ccc;
+ padding-left: 10px;
+ padding-top: 320px;
+}
+.projcts-section{
+background-color:#f4d9d9;
+height: 700px;
+}
+.projcts-part{
+ margin-top: 50px;
+ margin-left: 150px;
+ margin-right: 150px;
+ display: flex;
+}
+.projcts-div{
+ margin-top: 80px;
+}
+.projects-btn-div{
+ margin-top: 170px;
+}
+.projects-para{
+ margin-right: 150px;
+}
+
+.projects-btn-div1{
+ margin-top: 150px;
+}
+.projects-btn-div{
+ margin-top: 30px;
+ margin-left: 150px;
+ margin-right: 150px;
+}
+.contents-div{
+    display: flex;
+}
+.link {
+ cursor: pointer;
+ color: blue;
+ text-decoration: none; 
+ position: relative; 
+}
+
+.link::after {
+ content: '';
+ position: absolute;
+ bottom: -2px; 
+ left: 0;
+ width: 0;
+ height: 2px; 
+ background-color: blue;
+ transition: width 0.3s; 
+}
+
+.link:hover::after,
+.link.active::after {
+ width: 100%; 
+}
+
+#content1{
+ display: flex;
+}
+#content2{
+ display: flex;
+flex-direction: column;
+}
+.projects-image{
+ margin-top: 30px;
+ width: 550px;
+ height: 300px;
+ padding-right: 50px;
+}
+ #content2 {
+     display: none;
+     margin-top: 20px;
+     margin-left: 150px;
+ }
+
+ .visible {
+     display: block;
+ }
+ 
